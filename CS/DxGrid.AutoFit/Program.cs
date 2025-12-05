@@ -13,6 +13,7 @@ builder.Services.AddDevExpressBlazor(options =>
 });
 builder.Services.AddMvc();
 builder.Services.AddScoped<DxThemesService>();
+builder.Services.AddScoped<IPersonDataService, PersonDataService>();
 
 var app = builder.Build();
 if (!app.Environment.IsDevelopment())
