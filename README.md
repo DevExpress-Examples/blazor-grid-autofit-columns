@@ -59,7 +59,7 @@ protected override void OnAfterRender(bool firstRender) {
 
 ## More Examples
 
-- [Blazor Grid - Responsive Layout Demo](https://demos.devexpress.com/blazor/LayoutBreakpoint#ResponsiveLayout)
+- [Blazor Grid – Responsive Layout Demo](https://demos.devexpress.com/blazor/LayoutBreakpoint#ResponsiveLayout)
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
