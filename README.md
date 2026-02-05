@@ -4,9 +4,10 @@
 <!-- default badges end -->
 # Blazor Grid – How to Auto-Fit Columns to Content and Available Space
 
-This example implements a "smart" layout for the [DevExpress Blazor Grid](https://docs.devexpress.devx/Blazor/403143/components/grid) component. This layout adjusts to different desktop screen sizes on page render:
+This example implements a "smart" layout for the [DevExpress Blazor Grid](https://docs.devexpress.devx/Blazor/403143/components/grid) component. On page render, this layout adjusts to different desktop screen sizes:
+
+* Columns fill all available space.
 * Cell content is fully visible (word trimming/wrapping is disabled).
-* Columns automatically fill all available screen space.
 
 ![Blazor Grid – How to Auto-Fit Columns to Content and Available Space](images/auto-fit-grid-columns.png)
 
@@ -18,7 +19,7 @@ This example implements a "smart" layout for the [DevExpress Blazor Grid](https:
 
 3. Identify columns with fixed content width (for instance, ID, Date, Name).
 
-4. For these columns, assign maximum content length to [MinWidth](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.MinWidth) and leave the [Width](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.Width) property unspecified. This configuration ensures that a column never shrinks below the specified limit but can stretch on wide screens.
+4. For these columns, assign maximum content length to [MinWidth](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.MinWidth) and leave the [Width](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.Width) property unset. This configuration ensures that a column never shrinks below the specified limit but can stretch on wide screens.
 
 5. For remaining columns, set [Width](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.Width) to `0px`.
 
