@@ -21,23 +21,19 @@
 
 @code {
     IGrid Grid { get; set; }
-
     private List<Person> people { get; set; }
+    List<string> FixedWidthColumnCaptions = new List<string> { "ID", "First Name", 
+                                            "Last Name", "Honorific", "Occupation" };
 
-    protected override void OnAfterRender(bool firstRender)
-    {
-        if (firstRender)
-        {
+    protected override void OnAfterRender(bool firstRender) {
+        if (firstRender) {
             Grid.BeginUpdate();
-            foreach (var column in Grid.GetColumns())
-            {
-                if (column.Caption == "Email" || column.Caption == "Address" || column.Caption == "Description")
-                {
-                    column.Width = "0px";
-                }
-                else
-                {
+            foreach (var column in Grid.GetColumns()) {
+                if (FixedWidthColumnCaptions.Contains(column.Caption)) {
                     column.MinWidth = 100;
+                } 
+                else {
+                    column.Width = "0px";
                 }
             }
             Grid.EndUpdate();
@@ -46,8 +42,7 @@
         }
     }
 
-    protected override void OnInitialized()
-    {
+    protected override void OnInitialized() {
         people = PersonDataService.GetPeople();
     }
 }
