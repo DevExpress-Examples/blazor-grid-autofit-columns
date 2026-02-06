@@ -2,12 +2,12 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# Blazor Grid – How to Auto-Fit Columns to Content and Available Space
+# Blazor Grid – How to Fit Columns to Content and Available Space
 
-This example implements a "smart" layout for the [DevExpress Blazor Grid](https://docs.devexpress.devx/Blazor/403143/components/grid) component. On page render, this layout adjusts to different desktop screen sizes:
+This example implements a column layout for the [DevExpress Blazor Grid](https://docs.devexpress.devx/Blazor/403143/components/grid) component that adapts to different desktop screen sizes as follows:
 
-* Columns fill all available space.
-* Cell content is fully visible (word trimming/wrapping is disabled).
+* Columns occupy all available space
+* Cell content is fully visible (word trimming/wrapping is disabled)
 
 ![Blazor Grid – How to Auto-Fit Columns to Content and Available Space](images/auto-fit-grid-columns.png)
 
