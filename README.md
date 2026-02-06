@@ -17,13 +17,11 @@ This example implements a column layout for the [DevExpress Blazor Grid](https:/
 
 2. Use the [Grid.TextWrapEnabled](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGrid.TextWrapEnabled) property to disable word wrapping.
 
-3. Identify columns with fixed content width (for instance, ID, Date, Name).
+3. Identify columns with fixed content width (for instance, ID, Date, Name). For these columns, assign maximum content length to [MinWidth](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.MinWidth) and leave the [Width](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.Width) property unset. This configuration ensures that a column never shrinks below the specified limit but can stretch on wide screens.
 
-4. For these columns, assign maximum content length to [MinWidth](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.MinWidth) and leave the [Width](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.Width) property unset. This configuration ensures that a column never shrinks below the specified limit but can stretch on wide screens.
+4. For remaining columns, set [Width](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.Width) to `0px`.
 
-5. For remaining columns, set [Width](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.Width) to `0px`.
-
-6. Call the [AutoFitColumnWidths](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGrid.AutoFitColumnWidths) method to adjust zero-width columns to content and stretch fixed-width columns.
+5. Call the [AutoFitColumnWidths](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGrid.AutoFitColumnWidths) method to adjust zero-width columns to content and stretch fixed-width columns.
 
 ```csharp
 IGrid Grid { get; set; }
