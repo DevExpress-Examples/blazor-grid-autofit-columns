@@ -4,10 +4,10 @@
 <!-- default badges end -->
 # Blazor Grid – How to Fit Columns to Content and Available Space
 
-This example implements a column layout for the [DevExpress Blazor Grid](https://docs.devexpress.devx/Blazor/403143/components/grid) component that adapts to different desktop screen sizes as follows:
+This example implements a [DevExpress Blazor Grid](https://docs.devexpress.devx/Blazor/403143/components/grid) column layout that adapts to different desktop screen sizes as follows:
 
-* Columns occupy all available space
-* Cell content is fully visible (word trimming/wrapping is disabled)
+* Columns occupy available space
+* Cell content is always visible (word trimming/wrapping is disabled)
 
 ![Blazor Grid – How to Auto-Fit Columns to Content and Available Space](images/auto-fit-grid-columns.png)
 
@@ -17,7 +17,7 @@ This example implements a column layout for the [DevExpress Blazor Grid](https:/
 
 2. Use the [Grid.TextWrapEnabled](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGrid.TextWrapEnabled) property to disable word wrapping.
 
-3. Identify columns with fixed content width (for instance, ID, Date, Name). For these columns, assign maximum content length to [MinWidth](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.MinWidth) and leave the [Width](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.Width) property unset. This configuration ensures that a column never shrinks below the specified limit but can stretch on wide screens.
+3. Identify columns with fixed content width (for instance, ID, Date, Name). For "fixed content width" columns, assign maximum content length to [MinWidth](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.MinWidth) ([Width](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.Width) property must not be set). This configuration ensures that a column does not shrink below a specified limit but can stretch on wide screens.
 
 4. For remaining columns, set [Width](https://docs.devexpress.devx/Blazor/DevExpress.Blazor.DxGridColumn.Width) to `0px`.
 
