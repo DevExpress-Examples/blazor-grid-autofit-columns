@@ -49,9 +49,9 @@ protected override void OnAfterRender(bool firstRender) {
 
 ## Files to Review
 
-- [Index.razor](https://github.com/DevExpress-Examples/draft-DxGrid-AutoFit-Example/blob/25.1.7%2B/CS/DxGrid.AutoFit/Components/Pages/Index.razor)
-- [Person.cs](https://github.com/DevExpress-Examples/draft-DxGrid-AutoFit-Example/blob/25.1.7%2B/CS/DxGrid.AutoFit/Models/Person.cs)
-- [PersonDataService.cs](https://github.com/DevExpress-Examples/draft-DxGrid-AutoFit-Example/blob/25.1.7%2B/CS/DxGrid.AutoFit/Services/PersonDataService.cs)
+- [Index.razor](./CS/DxGrid.AutoFit/Components/Pages/Index.razor)
+- [Person.cs](./CS/DxGrid.AutoFit/Models/Person.cs)
+- [PersonDataService.cs](./CS/DxGrid.AutoFit/Services/PersonDataService.cs)
 
 ## Documentation
 
