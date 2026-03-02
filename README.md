@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# Blazor Grid – How to Fit Columns to Content and Available Space
+# Blazor Grid – Fit Columns to Content and Available Space
 
 This example implements a [DevExpress Blazor Grid](https://docs.devexpress.com/Blazor/403143/components/grid) column layout that adapts to different desktop screen sizes as follows:
 
